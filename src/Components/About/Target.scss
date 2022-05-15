@@ -1,0 +1,38 @@
+.target {
+  margin: 104px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 73px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    margin-top: 84px;
+    gap: 40px;
+  }
+
+  &__left {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      order: 2;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__text {
+    max-width: 394px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+}

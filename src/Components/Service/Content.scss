@@ -1,0 +1,57 @@
+.content {
+  margin-top: 127px;
+
+  @media (max-width: 1099px) {
+    margin-top: 70px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 86px;
+    column-gap: 15px;
+
+    @media (max-width: 1099px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img {
+    @media (max-width: 1099px) {
+      order: 2;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1099px) {
+      order: 1;
+    }
+  }
+  &__title {
+    margin-bottom: 14px;
+  }
+  &__text {
+    max-width: 520px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22.5px;
+    color: #555555;
+
+    @media (max-width: 1099px) {
+      max-width: 90%;
+    }
+  }
+}
+
+.certificate {
+  @media (max-width: 1099px) {
+    order: 2;
+  }
+}

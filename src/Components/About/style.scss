@@ -1,0 +1,20 @@
+.about {
+  background-image: url("../../../public/assets/img/main-bg.svg");
+  padding-bottom: 354px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 254px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 180px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 140px;
+  }
+
+  &__container {
+    max-width: 1400px;
+    width: 85%;
+    margin: 0 auto;
+  }
+}

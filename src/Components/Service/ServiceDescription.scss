@@ -1,0 +1,12 @@
+.service-description {
+  margin: 49px auto;
+  display: flex;
+  justify-content: center;
+  &__text {
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 400;
+    max-width: 940px;
+    text-align: center;
+  }
+}

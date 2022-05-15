@@ -1,0 +1,7 @@
+.service {
+  background-image: url("../../../public/assets/img/main-bg.svg");
+  padding-bottom: 312px;
+  @media (max-width: 767px) {
+    padding-bottom: 180px;
+  }
+}

@@ -1,0 +1,120 @@
+.hero {
+    margin-top: 100px;
+    height: 999px;
+    position: relative;
+    overflow: hidden;
+
+    &__info {
+        line-height: 1.26;
+        text-align: center;
+        color: #fff;
+        margin-top: -100px;
+
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+
+        @media (max-width: 991px) {
+            margin-top: -200px;
+        }
+    }
+    &__title {
+        font-size: 153px;
+        font-weight: 700;
+
+        @media (max-width: 991px) {
+            font-size: 120px;
+        }
+        @media (max-width: 767px) {
+            font-size: 100px;
+        }
+        @media (max-width: 567px) {
+            font-size: 80px;
+        }
+        @media (max-width: 400px) {
+            font-size: 60px;
+        }
+    }
+    &__subtitle {
+        font-size: 51px;
+        font-weight: 400;
+
+        @media (max-width: 991px) {
+            font-size: 40px;
+        }
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
+        @media (max-width: 567px) {
+            padding: 0 30px;
+        }
+        @media (max-width: 400px) {
+            font-size: 24px;
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        top: 850px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 5;
+        gap: 20px;
+        span {
+            display: block;
+            transition: all 1s ease;
+            width: 80px;
+            height: 15px;
+            border-radius: 10px;
+            background: white;
+            cursor: pointer;
+
+            @media (max-width: 1099px) {
+                width: 60px;
+                height: 11px;
+            }
+            @media (max-width: 767px) {
+                width: 40px;
+                height: 9px;
+            }
+        }
+    }
+}
+
+.redspan {
+    background: red !important;
+}
+
+.hero__image {
+    transition: all 1.5s ease;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // opacity: 0;
+    height: 999px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.hero__image.activeSlide {
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.hero__image.lastSlide {
+    left: 100%;
+    transform: translateX(-100%);
+    z-index: 0;
+}
+.hero__image.nextSlide {
+    transform: translateX(100%);
+    z-index: 0;
+}

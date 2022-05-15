@@ -1,0 +1,63 @@
+.adress {
+  margin-bottom: 168px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1600px) {
+    flex-direction: column;
+    gap: 70px;
+    // align-items: center;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 120px;
+    gap: 60px;
+  }
+  @media (max-width: 567px) {
+    margin-bottom: 80px;
+    gap: 40px;
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 1.25;
+    color: #555555;
+    margin: 20px 0 90px;
+    max-width: 660px;
+
+    @media (max-width: 1600px) {
+      margin: 20px 0 40px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  &__case {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+    max-width: 680px;
+
+    @media (max-width: 567px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      .adress__email {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__number,
+  &__email {
+    font-size: 26.3906px;
+    line-height: 1.25;
+    color: #555555;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.homepage {
+  background-image: url("../../../public/assets/img/main-bg.svg");
+  padding-bottom: 440px;
+  @media (max-width: 1099px) {
+    padding-bottom: 240px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 180px;
+  }
+}

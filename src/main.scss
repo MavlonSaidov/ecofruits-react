@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: ;
+}
+// @font-face {
+//   font-family: "Kinetika", sans-serif;
+//   src: local("Kinetika"), url(./fonts/Kinetika\ Regular.ttf) format(truetype);
+// }
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (max-width: 1500px) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: 1300px) {
+    max-width: 1150px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 720px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 560px;
+  }
+
+  @media (max-width: 567px) {
+    max-width: 100%;
+  }
+}
