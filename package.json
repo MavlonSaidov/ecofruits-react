@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mavlonsaidov.github.io/ecofruits-react",
   "name": "ecofruits",
   "version": "0.1.0",
   "private": true,
@@ -7,8 +8,8 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "emailjs-com": "^3.2.0",
-    "eslint": "^8.15.0",
-    "eslint-config-react-app": "6",
+    "eslint": "^8.0.0",
+    "eslint-config-react-app": "^7.0.1",
     "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "hero-slider": "^2.0.3",
@@ -24,6 +25,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

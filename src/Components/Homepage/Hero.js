@@ -63,7 +63,7 @@ function Hero() {
                         </div>
                         <div className="hero__info">
                             <h1 className="hero__title">
-                            <div>E</div>
+                                <div>E</div>
                                 <div>c</div>
                                 <div>o</div>
                                 <div className="space"></div>
