@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ecofruits-react/static/css/main.94434578.css",
+    "main.js": "/ecofruits-react/static/js/main.28cae040.js",
+    "static/media/hero4.png": "/ecofruits-react/static/media/hero4.cbb8cebc4df1bcb31e0f.png",
+    "static/media/hero.png": "/ecofruits-react/static/media/hero.baf81cf41eb7f325ce42.png",
+    "static/media/hero2.jpg": "/ecofruits-react/static/media/hero2.c6982801c329be561366.jpg",
+    "static/media/hero3.jpg": "/ecofruits-react/static/media/hero3.43ae9a60908978d73a0b.jpg",
+    "static/media/main-bg.svg": "/ecofruits-react/static/media/main-bg.d92a5354c41c32790b32.svg",
+    "index.html": "/ecofruits-react/index.html",
+    "main.94434578.css.map": "/ecofruits-react/static/css/main.94434578.css.map",
+    "main.28cae040.js.map": "/ecofruits-react/static/js/main.28cae040.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94434578.css",
+    "static/js/main.28cae040.js"
+  ]
+}
