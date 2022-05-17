@@ -10,6 +10,7 @@
     "eslint": "^8.15.0",
     "eslint-config-react-app": "6",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "hero-slider": "^2.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.1.0",
