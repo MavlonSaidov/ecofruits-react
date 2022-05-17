@@ -1,14 +1,21 @@
 {
   "name": "ecofruits",
+  "homepage": "https://mavlonsaidov.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "babel-eslint": "^10.1.0",
     "emailjs-com": "^3.2.0",
-    "eslint": "^8.15.0",
+    "eslint": "7.32",
     "eslint-config-react-app": "6",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "hero-slider": "^2.0.3",
@@ -27,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
