@@ -62,7 +62,18 @@ function Hero() {
                             <img src={img} alt="hero-background" />
                         </div>
                         <div className="hero__info">
-                            <h1 className="hero__title">Eco Fruit</h1>
+                            <h1 className="hero__title">
+                                <div>E</div>
+                                <div>c</div>
+                                <div>o</div>
+                                <div className="space"></div>
+                                <div>F</div>
+                                <div>r</div>
+                                <div>u</div>
+                                <div>i</div>
+                                <div>t</div>
+                                <div>s</div>
+                            </h1>
                             <p className="hero__subtitle">
                                 из Узбекистана с любовью
                             </p>
