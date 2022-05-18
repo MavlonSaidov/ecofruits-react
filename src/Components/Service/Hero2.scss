@@ -1,26 +1,29 @@
 .hero2 {
-  background: linear-gradient(0deg, rgba(16, 16, 16, 0) 0%, #2d2d2d 140%),
-    url("../../../public/assets/img/hero2.jpg");
-  //   background-image: ;
-  background-size: cover;
-  background-position: center center;
-  margin-top: 100px;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__title {
-    font-weight: 700;
-    font-size: 121.826px;
-    line-height: 152px;
-    color: #ffffff;
-
+    background: linear-gradient(0deg, rgba(16, 16, 16, 0) 0%, #2d2d2d 140%),
+        url("../../../public/assets/img/hero2.jpg");
+    //   background-image: ;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 100px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 767px) {
-      font-size: 80px;
+        margin-top: 70px;
     }
-    @media (max-width: 400px) {
-      font-size: 60px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 121.826px;
+        line-height: 152px;
+        color: #ffffff;
+
+        @media (max-width: 767px) {
+            font-size: 80px;
+        }
+        @media (max-width: 400px) {
+            font-size: 60px;
+        }
     }
-  }
 }

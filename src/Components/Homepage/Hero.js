@@ -1,35 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.scss";
-import hero1 from "./hero-images/hero.png";
-import hero2 from "./hero-images/hero2.jpg";
-import hero3 from "./hero-images/hero4.png";
+import heroData from "./HeroData";
 
 function Hero() {
-    const data = [
-        {
-            id: 1,
-            img: hero1,
-        },
-        {
-            id: 2,
-            img: hero2,
-        },
-        {
-            id: 3,
-            img: hero3,
-        },
-    ];
     const [index, setIndex] = useState(0);
-
     useEffect(() => {
-        const lastIndex = data.length - 1;
+        const lastIndex = heroData.length - 1;
         if (index < 0) {
             setIndex(lastIndex);
         }
         if (index > lastIndex) {
             setIndex(0);
         }
-    }, [index, data]);
+    }, [index, heroData]);
 
     useEffect(() => {
         let slider = setInterval(() => {
@@ -42,7 +25,7 @@ function Hero() {
 
     return (
         <div className="hero">
-            {data.map((person, personIndex) => {
+            {heroData.map((person, personIndex) => {
                 const { id, img } = person;
 
                 let position = "nextSlide";
@@ -51,7 +34,7 @@ function Hero() {
                 }
                 if (
                     personIndex === index - 1 ||
-                    (index === 0 && personIndex === data.length - 1)
+                    (index === 0 && personIndex === heroData.length - 1)
                 ) {
                     position = "lastSlide";
                 }
